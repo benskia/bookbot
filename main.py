@@ -9,8 +9,10 @@ def main():
         print(f"--- Begin report of {FILEPATH} ---")
         print(f"{words} words found in the document\n")
 
-        for ch_ct in sorted_character_counts:
-            print(f"The {ch_ct['character']} character was found {ch_ct['count']} times")
+        for char_count in sorted_character_counts:
+            character = char_count["character"]
+            count = char_count["count"]
+            print(f"The {character} character was found {count} times")
 
         print("--- End report ---")
 
