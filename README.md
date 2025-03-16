@@ -1,3 +1,3 @@
-﻿# BookBot
+﻿# bookbot
 
-This is a CLI tool for displaying a few metrics about a given text.
+BookBot is my first [Boot.dev](https://www.boot.dev) project!

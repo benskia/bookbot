@@ -16,9 +16,11 @@ def main():
 
         print("--- End report ---")
 
+
 def count_words(text: str) -> int:
     words = text.split()
     return len(words)
+
 
 def count_characters(text: str) -> dict:
     letter_occurrences = {}
@@ -32,16 +34,19 @@ def count_characters(text: str) -> dict:
         letter_occurrences[letter] += 1
     return letter_occurrences
 
+
 def sort_character_counts(char_counts: dict) -> list:
     sorted_character_counts = []
     for char, count in char_counts.items():
-        new_char_count = { "character": char, "count": count }
+        new_char_count = {"character": char, "count": count}
         sorted_character_counts.append(new_char_count)
     sorted_character_counts.sort(reverse=True, key=sort_on)
     return sorted_character_counts
 
+
 def sort_on(dict: dict) -> int:
     return dict["count"]
+
 
 if __name__ == "__main__":
     main()
